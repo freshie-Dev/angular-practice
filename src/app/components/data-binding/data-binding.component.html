@@ -1,0 +1,36 @@
+<h1>One way data binding</h1>
+
+<h2>From .ts to .html</h2>
+<ol>
+    <li>
+        <h2>Interpolation</h2>
+        <ul>
+            <li>
+                <p>{{courseName}}</p>
+            </li>
+            <li><input type="text" value={{courseName}}></li>
+            <li><input type={{inputType}} name="" id=""></li>
+        </ul>
+    </li>
+    <li>
+        <h2>Proprety Binding</h2>
+        <ul [class]="customClass">
+            <li>
+                <p>Custom class applied</p>
+            </li>
+            <li><input type="text" [value]="courseName"></li>
+            <li><input [type]="inputType" name="" id=""></li>
+        </ul>
+    </li>
+</ol>
+<h2>From .html to .ts</h2>
+<ol>
+    <li>
+        <h2>Event Binding</h2>
+        <ul>
+            <li><button (click)="showAlert('Event Binding Example!')">Click Me!</button></li>
+            <li><button (click) = "changeCourseName()" >Change course</button></li>
+            <li><input type="text" [(ngModel)] = "courseName"></li>
+        </ul>
+    </li>
+</ol>

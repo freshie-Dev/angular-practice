@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoTestOne';
+  homeLink = 'home'
+  aboutLink = 'about'
+  dataBindingLink = 'data-binding'
+  templateFormLink = 'template-form'
 }
